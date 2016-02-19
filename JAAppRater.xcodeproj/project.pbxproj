@@ -12,7 +12,35 @@
 		91FD45E91C76D3B50035BA84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FD45E71C76D3B50035BA84 /* Main.storyboard */; };
 		91FD45EB1C76D3B50035BA84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91FD45EA1C76D3B50035BA84 /* Assets.xcassets */; };
 		91FD45EE1C76D3B50035BA84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FD45EC1C76D3B50035BA84 /* LaunchScreen.storyboard */; };
+		91FD45FD1C76D4250035BA84 /* JAAppRaterFW.h in Headers */ = {isa = PBXBuildFile; fileRef = 91FD45FC1C76D4250035BA84 /* JAAppRaterFW.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91FD46011C76D4250035BA84 /* JAAppRaterFW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FD45FA1C76D4250035BA84 /* JAAppRaterFW.framework */; };
+		91FD46021C76D4250035BA84 /* JAAppRaterFW.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91FD45FA1C76D4250035BA84 /* JAAppRaterFW.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		91FD46081C76D4550035BA84 /* JAAppRater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD46071C76D4550035BA84 /* JAAppRater.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91FD45FF1C76D4250035BA84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91FD45D81C76D3B50035BA84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91FD45F91C76D4250035BA84;
+			remoteInfo = JAAppRaterFW;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		91FD46061C76D4250035BA84 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				91FD46021C76D4250035BA84 /* JAAppRaterFW.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		91FD45E01C76D3B50035BA84 /* JAAppRater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JAAppRater.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +50,22 @@
 		91FD45EA1C76D3B50035BA84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91FD45ED1C76D3B50035BA84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91FD45EF1C76D3B50035BA84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91FD45FA1C76D4250035BA84 /* JAAppRaterFW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JAAppRaterFW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91FD45FC1C76D4250035BA84 /* JAAppRaterFW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAAppRaterFW.h; sourceTree = "<group>"; };
+		91FD45FE1C76D4250035BA84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91FD46071C76D4550035BA84 /* JAAppRater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JAAppRater.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		91FD45DD1C76D3B50035BA84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91FD46011C76D4250035BA84 /* JAAppRaterFW.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91FD45F61C76D4250035BA84 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				91FD45E21C76D3B50035BA84 /* JAAppRater */,
+				91FD45FB1C76D4250035BA84 /* JAAppRaterFW */,
 				91FD45E11C76D3B50035BA84 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				91FD45E01C76D3B50035BA84 /* JAAppRater.app */,
+				91FD45FA1C76D4250035BA84 /* JAAppRaterFW.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,11 +102,32 @@
 				91FD45EA1C76D3B50035BA84 /* Assets.xcassets */,
 				91FD45EC1C76D3B50035BA84 /* LaunchScreen.storyboard */,
 				91FD45EF1C76D3B50035BA84 /* Info.plist */,
+				91FD46071C76D4550035BA84 /* JAAppRater.swift */,
 			);
 			path = JAAppRater;
 			sourceTree = "<group>";
 		};
+		91FD45FB1C76D4250035BA84 /* JAAppRaterFW */ = {
+			isa = PBXGroup;
+			children = (
+				91FD45FC1C76D4250035BA84 /* JAAppRaterFW.h */,
+				91FD45FE1C76D4250035BA84 /* Info.plist */,
+			);
+			path = JAAppRaterFW;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		91FD45F71C76D4250035BA84 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91FD45FD1C76D4250035BA84 /* JAAppRaterFW.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		91FD45DF1C76D3B50035BA84 /* JAAppRater */ = {
@@ -74,15 +137,35 @@
 				91FD45DC1C76D3B50035BA84 /* Sources */,
 				91FD45DD1C76D3B50035BA84 /* Frameworks */,
 				91FD45DE1C76D3B50035BA84 /* Resources */,
+				91FD46061C76D4250035BA84 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				91FD46001C76D4250035BA84 /* PBXTargetDependency */,
 			);
 			name = JAAppRater;
 			productName = JAAppRater;
 			productReference = 91FD45E01C76D3B50035BA84 /* JAAppRater.app */;
 			productType = "com.apple.product-type.application";
+		};
+		91FD45F91C76D4250035BA84 /* JAAppRaterFW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91FD46031C76D4250035BA84 /* Build configuration list for PBXNativeTarget "JAAppRaterFW" */;
+			buildPhases = (
+				91FD45F51C76D4250035BA84 /* Sources */,
+				91FD45F61C76D4250035BA84 /* Frameworks */,
+				91FD45F71C76D4250035BA84 /* Headers */,
+				91FD45F81C76D4250035BA84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JAAppRaterFW;
+			productName = JAAppRaterFW;
+			productReference = 91FD45FA1C76D4250035BA84 /* JAAppRaterFW.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +178,9 @@
 				ORGANIZATIONNAME = "Jatin Arora";
 				TargetAttributes = {
 					91FD45DF1C76D3B50035BA84 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					91FD45F91C76D4250035BA84 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -113,6 +199,7 @@
 			projectRoot = "";
 			targets = (
 				91FD45DF1C76D3B50035BA84 /* JAAppRater */,
+				91FD45F91C76D4250035BA84 /* JAAppRaterFW */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +215,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		91FD45F81C76D4250035BA84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -136,11 +230,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				91FD45E61C76D3B50035BA84 /* ViewController.swift in Sources */,
+				91FD46081C76D4550035BA84 /* JAAppRater.swift in Sources */,
 				91FD45E41C76D3B50035BA84 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		91FD45F51C76D4250035BA84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91FD46001C76D4250035BA84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91FD45F91C76D4250035BA84 /* JAAppRaterFW */;
+			targetProxy = 91FD45FF1C76D4250035BA84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		91FD45E71C76D3B50035BA84 /* Main.storyboard */ = {
@@ -250,6 +360,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JAAppRater/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Jatin.JAAppRater;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -261,9 +372,50 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JAAppRater/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Jatin.JAAppRater;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		91FD46041C76D4250035BA84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = JAAppRaterFW/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jatin.JAAppRaterFW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		91FD46051C76D4250035BA84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = JAAppRaterFW/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jatin.JAAppRaterFW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -284,6 +436,14 @@
 			buildConfigurations = (
 				91FD45F31C76D3B50035BA84 /* Debug */,
 				91FD45F41C76D3B50035BA84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		91FD46031C76D4250035BA84 /* Build configuration list for PBXNativeTarget "JAAppRaterFW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91FD46041C76D4250035BA84 /* Debug */,
+				91FD46051C76D4250035BA84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
