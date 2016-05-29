@@ -12,7 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let myScreen = Screen(height:640, width:480)
+        let totalPixels = myScreen.calculateTotalPixels()
+        print("Total pixels on the screen are = \(totalPixels)")
+        
     }
 
     override func didReceiveMemoryWarning() {
